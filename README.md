@@ -14,14 +14,14 @@ You just need Python installed.
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/boogiedude243261-beep/VLSM-Calculator-Python.git```
+   git clone https://github.com/boogiedude243261-beep/VLSM-Calculator-Python.git
 
 3. Run the script:
    `python VLSM.py`
 
    or..
 
-    `python3 VLSM.py (for MacOS)`
+       `python3 VLSM.py (for MacOS)`
 
 ## Example
 Input:
