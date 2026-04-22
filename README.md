@@ -25,10 +25,11 @@ You just need Python installed.
 
 ## Example
 Input:
-- Network: `10.0.0.0/24`
-- Hosts: `100 20 10`
+- Network: `192.168.1.0/24`
+- Hosts: `50 20 40 30 60`
 
 The script will output the boundaries for each block and show the remaining available space in the original scope.
 
 ---
-*Note: This was written for IPv4. IPv6 support isn't planned yet but might be added later.*
+*Note: This was written for IPv4. IPv6 support isn't planned yet but might be added later.* 
+
