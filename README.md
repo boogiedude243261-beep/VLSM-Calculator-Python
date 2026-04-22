@@ -17,11 +17,11 @@ You just need Python installed.
    git clone https://github.com/boogiedude243261-beep/VLSM-Calculator-Python.git
 
 3. Run the script:
-   `python VLSM.py`
+ `python VLSM.py`
 
    or..
-
-                 `python3 VLSM.py (for MacOS)`
+ 
+   `python3 VLSM.py (for MacOS)`
 
 ## Example
 Input:
