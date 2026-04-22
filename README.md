@@ -21,7 +21,7 @@ You just need Python installed.
 
    or..
 
-       `python3 VLSM.py (for MacOS)`
+                 `python3 VLSM.py (for MacOS)`
 
 ## Example
 Input:
