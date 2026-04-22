@@ -13,7 +13,7 @@ The script takes a base network (CIDR notation) and a list of host requirements.
 You just need Python installed.
 
 1. Clone the repo:
-                               `git clone https://github.com/boogiedude243261-beep/VLSM-Calculator-Python.git`
+                                                                                  `git clone https://github.com/boogiedude243261-beep/VLSM-Calculator-Python.git`
 
 2. Run the script:
    `python VLSM.py`
