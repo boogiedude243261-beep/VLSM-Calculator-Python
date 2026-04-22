@@ -17,7 +17,9 @@ You just need Python installed.
 
 2. Run the script:
    `python VLSM.py`
-    \nl or
+
+   or..
+
    `python3 VLSM.py (for MacOS)`
 
 ## Example
