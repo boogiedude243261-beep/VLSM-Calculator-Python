@@ -40,14 +40,16 @@ while True:
      print(f"{G}Broadcast Address: {RT} {to_ip(next - 1)} \n")
      current+=walking 
      subnum += 1
-     if total_ips > 0:
-        usable_power = 2**math.floor(math.log2(total_ips))
+     if total_ips >= 4:
+          usable_power = 2**math.floor(math.log2(total_ips))
+          cidr = 32 - int(math.log2(usable_power))
+          usable_hosts = usable_power - 2
+          largest_usable = f"{usable_hosts} /{cidr}"
      else:
-        usable_power = 0
+          largest_usable = "0 /32"
 
-     print(f"              Remaining Addresses: {total_ips}")
-     print(f"              Largest Usable Block: {usable_power-2} /{32 - int(math.log2(usable_power)) if usable_power > 0 else 32}")
-     
+     print(f"              Remaining Addresses: {max(0, total_ips)}")
+     print(f"              Largest Usable Block: {largest_usable}")
     input(f"\nPress ENTER to Restart:\n")
 
 
