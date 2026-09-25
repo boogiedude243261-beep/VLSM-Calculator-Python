@@ -1,4 +1,4 @@
-# VLSM-Calc
+# VLSM-Calc Networking Project
 
 A simple Python script for calculating Variable Length Subnet Masks via the terminal. I built this to speed up subnetting tasks without needing to jump back and forth to a web-based calculator or having to do the math manually.
 
