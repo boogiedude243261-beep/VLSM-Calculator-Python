@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+  SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+if command -v python3 &>/dev/null; then
+    python3 "$SCRIPT_DIR/VLSM.py" "$@"
+elif command -v python &>/dev/null; then
+    python "$SCRIPT_DIR/VLSM.py" "$@"
+else
+    echo "Error: Python is required to run this script but was not found." >&2
+    exit 1
+fi
