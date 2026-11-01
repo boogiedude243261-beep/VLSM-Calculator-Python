@@ -16,12 +16,14 @@ You just need Python installed.
    ```bash
    git clone https://github.com/boogiedude243261-beep/VLSM-Calculator-Python.git
 
+2. Navigate to the directory:    
+ `cd VLSM-Calculator-Python`
 3. Run the script:
  `python VLSM.py`
 
    or..
  
-   `python3 VLSM.py` (for MacOS)
+   `python3 VLSM.py`
 
 ## Example
 Input:
@@ -31,5 +33,5 @@ Input:
 The script will output the boundaries for each block and show the remaining available space in the original scope.
 
 ---
-*Note: This was written for IPv4. IPv6 support isn't planned yet but might be added later.* 
+*Note: This was written for IPv4 not IPv6
 
