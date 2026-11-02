@@ -1,12 +1,12 @@
 #setup
 R = "\033[31m"
-G = "\033[38;2;90;57;135m"
-BL = "\033[38;2;30;144;255m"
+P = "\033[38;2;90;57;135m"
+G = "\033[38;2;128;243;31m"
 BO = "\033[1m"
 RT = "\033[0m"
 import math 
 while True: 
-    adrs = input(f"{BO} {G} Enter Network Address in A.B.C.D/E Format: {RT}")
+    adrs = input(f"{BO} {P} Enter Network Address in A.B.C.D/E Format: {RT}")
     parts = adrs.split("/")
     strt_mask = int(parts[1])
     stcl = ((0xFFFFFFFF << (32-strt_mask)) & 0xFFFFFFFF) 
@@ -16,7 +16,7 @@ while True:
        return f"{(n>>24)&255}.{(n>>16)&255}.{(n>>8)&255}.{n&255}"
     current = int(octet, 2) & stcl
     total_ips = 2**(32-strt_mask) 
-    rawhost = input(f"{BO} {G} Enter all your subnets hostcounts like this: x y z: {RT}")
+    rawhost = input(f"{BO} {P} Enter all your subnets hostcounts like this: x y z: {RT}")
     host_list = [int(h.strip()) for h in rawhost.split()]
     host_list.sort(reverse=True)
     subnum = 1
@@ -34,10 +34,10 @@ while True:
           break  # Out of space!
      total_ips -= walking 
      bitmask = ((0xFFFFFFFF << (32-new_mask)) & 0xFFFFFFFF)
-     print(f"{BL}Subnet Mask: {RT} {to_ip(bitmask)} || /{new_mask}")
-     print(f"{G}Network Address: {RT} {to_ip(current)}")
-     print(f"{G}Gateway Address:{RT} {to_ip(gateway)}")
-     print(f"{G}Broadcast Address: {RT} {to_ip(next - 1)} \n")
+     print(f"{G}Subnet Mask: {RT} {to_ip(bitmask)} || /{new_mask}")
+     print(f"{P}Network Address: {RT} {to_ip(current)}")
+     print(f"{P}Gateway Address:{RT} {to_ip(gateway)}")
+     print(f"{P}Broadcast Address: {RT} {to_ip(next - 1)} \n")
      current+=walking 
      subnum += 1
      if total_ips >= 4:
