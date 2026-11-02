@@ -2,6 +2,7 @@
 R = "\033[31m"
 P = "\033[38;2;90;57;135m"
 G = "\033[38;2;128;243;31m"
+B = "\033[0;34m"
 BO = "\033[1m"
 RT = "\033[0m"
 import math 
@@ -35,9 +36,9 @@ while True:
      total_ips -= walking 
      bitmask = ((0xFFFFFFFF << (32-new_mask)) & 0xFFFFFFFF)
      print(f"{G}Subnet Mask: {RT} {to_ip(bitmask)} || /{new_mask}")
-     print(f"{P}Network Address: {RT} {to_ip(current)}")
-     print(f"{P}Gateway Address:{RT} {to_ip(gateway)}")
-     print(f"{P}Broadcast Address: {RT} {to_ip(next - 1)} \n")
+     print(f"{B}Network Address: {RT} {to_ip(current)}")
+     print(f"{B}Gateway Address:{RT} {to_ip(gateway)}")
+     print(f"{B}Broadcast Address: {RT} {to_ip(next - 1)} \n")
      current+=walking 
      subnum += 1
      if total_ips >= 4:
