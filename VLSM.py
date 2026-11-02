@@ -28,7 +28,7 @@ while True:
      new_mask = 32 - hostbits 
      walking = 2**hostbits 
      next = current + walking
-     gateway = next - 2
+     gateway = current + 1 
      if walking > total_ips: 
           print(f"{R}{BO}!!! ERROR: Only {total_ips} IPs left. This request needs {walking}. {RT}")
           break  # Out of space!
