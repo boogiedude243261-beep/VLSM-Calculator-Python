@@ -11,8 +11,6 @@ The script takes a base network (CIDR notation) and a list of host requirements.
 
 ## How to run it
 You just need Python installed.
-
-## One-liners: 
 ### Linux & macOS
 ```bash
 cd ~ && git clone https://github.com && cd ~/.local/bin && echo 'cd ~/VLSM-Calculator-Python && python3 VLSM.py' > ./vlsm && chmod +x vlsm && cd ~
